@@ -22,6 +22,7 @@
 		50538F1C19B9AA8C0010BAF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50538EFE19B9AA8C0010BAF9 /* UIKit.framework */; };
 		50538F2419B9AA8C0010BAF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50538F2219B9AA8C0010BAF9 /* InfoPlist.strings */; };
 		50538F2619B9AA8C0010BAF9 /* RSSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50538F2519B9AA8C0010BAF9 /* RSSTests.m */; };
+		5097F20C19B9EC40001A5428 /* RSSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5097F20B19B9EC40001A5428 /* RSSDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		50538F2119B9AA8C0010BAF9 /* RSSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSSTests-Info.plist"; sourceTree = "<group>"; };
 		50538F2319B9AA8C0010BAF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50538F2519B9AA8C0010BAF9 /* RSSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSTests.m; sourceTree = "<group>"; };
+		5097F20A19B9EC40001A5428 /* RSSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSDetailViewController.h; sourceTree = "<group>"; };
+		5097F20B19B9EC40001A5428 /* RSSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSDetailViewController.m; sourceTree = "<group>"; };
 		5B15F43DBC754FE8B45AF6FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC016EACC8547778F0ABDEE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +126,8 @@
 				50538F0C19B9AA8C0010BAF9 /* Main.storyboard */,
 				50538F0F19B9AA8C0010BAF9 /* RSStableViewController.h */,
 				50538F1019B9AA8C0010BAF9 /* RSStableViewController.m */,
+				5097F20A19B9EC40001A5428 /* RSSDetailViewController.h */,
+				5097F20B19B9EC40001A5428 /* RSSDetailViewController.m */,
 				50538F1219B9AA8C0010BAF9 /* Images.xcassets */,
 				50538F0119B9AA8C0010BAF9 /* Supporting Files */,
 			);
@@ -292,6 +297,7 @@
 			files = (
 				50538F1119B9AA8C0010BAF9 /* RSStableViewController.m in Sources */,
 				50538F0B19B9AA8C0010BAF9 /* AppDelegate.m in Sources */,
+				5097F20C19B9EC40001A5428 /* RSSDetailViewController.m in Sources */,
 				50538F0719B9AA8C0010BAF9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
