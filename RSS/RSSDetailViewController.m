@@ -12,9 +12,7 @@
 
 @end
 
-@implementation RSSDetailViewController {
-    BOOL _isShowAnimate;
-}
+@implementation RSSDetailViewController
 
 - (void)viewDidLoad
 {
@@ -23,24 +21,18 @@
     NSURL *url = [NSURL URLWithString:self.link];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     
-    _isShowAnimate = YES;
     [self.webView loadRequest:urlRequest];
 }
 
 #pragma mark - UIWebViewDelegate -
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    if (_isShowAnimate) {
-        _isShowAnimate = NO;
-        [self.activityIndicator startAnimating];
-    }
+    [self.activityIndicator startAnimating];
     
     return YES;
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    _isShowAnimate = NO;
-    
     [self.activityIndicator stopAnimating];
     self.activityIndicator.hidesWhenStopped = YES;
 }

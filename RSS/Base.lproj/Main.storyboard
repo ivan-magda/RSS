@@ -59,21 +59,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9CB-Im-PhM">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9CB-Im-PhM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="z8O-Nn-jGr" id="M7z-mL-AJh"/>
                                 </connections>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-Uu-mDv">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-Uu-mDv">
                                 <rect key="frame" x="150" y="274" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" red="0.87736656020000003" green="0.2205463047" blue="0.2343179745" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfM-eu-bDc">
+                                <rect key="frame" x="8" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="80r-0S-nSP">
+                                        <connections>
+                                            <action selector="goBack" destination="9CB-Im-PhM" id="G80-kr-ibr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="q7F-Fc-HOe"/>
+                                    <barButtonItem systemItem="fastForward" id="ans-j2-dhp">
+                                        <connections>
+                                            <action selector="goForward" destination="9CB-Im-PhM" id="WMM-Ma-ddk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zDF-ul-DXS"/>
+                                    <barButtonItem systemItem="stop" id="gXx-6v-pg8">
+                                        <connections>
+                                            <action selector="stopLoading" destination="9CB-Im-PhM" id="phN-kt-Any"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="1xN-fI-VbK"/>
+                                    <barButtonItem systemItem="refresh" id="Xys-UD-575">
+                                        <connections>
+                                            <action selector="reload" destination="9CB-Im-PhM" id="3dV-pS-G7L"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sfM-eu-bDc" secondAttribute="trailing" constant="-8" id="60O-ts-BmD"/>
+                            <constraint firstItem="sfM-eu-bDc" firstAttribute="top" secondItem="9CB-Im-PhM" secondAttribute="bottom" id="8ji-AB-T65"/>
+                            <constraint firstItem="hmO-Uu-mDv" firstAttribute="centerX" secondItem="sfM-eu-bDc" secondAttribute="centerX" id="AfZ-ew-NUW"/>
+                            <constraint firstAttribute="bottom" secondItem="sfM-eu-bDc" secondAttribute="bottom" id="KgY-VL-pc4"/>
+                            <constraint firstItem="9CB-Im-PhM" firstAttribute="leading" secondItem="C86-Yh-XUI" secondAttribute="leading" id="SC8-dY-6fw"/>
+                            <constraint firstItem="hmO-Uu-mDv" firstAttribute="top" secondItem="qod-Vm-klh" secondAttribute="bottom" constant="210" id="V89-u2-Lg7"/>
+                            <constraint firstAttribute="trailing" secondItem="9CB-Im-PhM" secondAttribute="trailing" id="Yfd-He-HHM"/>
+                            <constraint firstItem="sfM-eu-bDc" firstAttribute="leading" secondItem="C86-Yh-XUI" secondAttribute="leading" constant="8" id="bGG-oD-RKB"/>
+                            <constraint firstItem="9CB-Im-PhM" firstAttribute="top" secondItem="C86-Yh-XUI" secondAttribute="top" id="sdJ-vh-dGn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GqF-TD-nb0"/>
                     <connections>

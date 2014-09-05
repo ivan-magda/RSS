@@ -46,16 +46,15 @@
     {
         TBXMLElement *title = [TBXML childElementNamed:@"title" parentElement:item];
         NSString *itemName = [TBXML textForElement:title];
+        [_titles addObject:itemName];
         
         TBXMLElement *description = [TBXML nextSiblingNamed:@"description" searchFromElement:title];
-        NSString *anDescription = [TBXML textForElement:description];
         
         TBXMLElement *link = [TBXML nextSiblingNamed:@"link" searchFromElement:description];
         NSString *anLink = [TBXML textForElement:link];
         [_links addObject:anLink];
         
-        [_titles addObject:itemName];
-        NSLog(@"%@\n%@\n%@", itemName, anDescription, anLink);
+        NSLog(@"%@\n%@", itemName, anLink);
     }
 }
 
