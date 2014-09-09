@@ -73,7 +73,7 @@
                                 <color key="color" red="0.87736656020000003" green="0.2205463047" blue="0.2343179745" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfM-eu-bDc">
-                                <rect key="frame" x="8" y="524" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem systemItem="rewind" id="80r-0S-nSP">
@@ -104,15 +104,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="sfM-eu-bDc" secondAttribute="trailing" constant="-8" id="60O-ts-BmD"/>
-                            <constraint firstItem="sfM-eu-bDc" firstAttribute="top" secondItem="9CB-Im-PhM" secondAttribute="bottom" id="8ji-AB-T65"/>
-                            <constraint firstItem="hmO-Uu-mDv" firstAttribute="centerX" secondItem="sfM-eu-bDc" secondAttribute="centerX" id="AfZ-ew-NUW"/>
-                            <constraint firstAttribute="bottom" secondItem="sfM-eu-bDc" secondAttribute="bottom" id="KgY-VL-pc4"/>
-                            <constraint firstItem="9CB-Im-PhM" firstAttribute="leading" secondItem="C86-Yh-XUI" secondAttribute="leading" id="SC8-dY-6fw"/>
-                            <constraint firstItem="hmO-Uu-mDv" firstAttribute="top" secondItem="qod-Vm-klh" secondAttribute="bottom" constant="210" id="V89-u2-Lg7"/>
-                            <constraint firstAttribute="trailing" secondItem="9CB-Im-PhM" secondAttribute="trailing" id="Yfd-He-HHM"/>
-                            <constraint firstItem="sfM-eu-bDc" firstAttribute="leading" secondItem="C86-Yh-XUI" secondAttribute="leading" constant="8" id="bGG-oD-RKB"/>
-                            <constraint firstItem="9CB-Im-PhM" firstAttribute="top" secondItem="C86-Yh-XUI" secondAttribute="top" id="sdJ-vh-dGn"/>
+                            <constraint firstItem="sfM-eu-bDc" firstAttribute="leading" secondItem="C86-Yh-XUI" secondAttribute="leading" id="06E-YX-VG5"/>
+                            <constraint firstAttribute="trailing" secondItem="9CB-Im-PhM" secondAttribute="trailing" id="7cW-9B-73a"/>
+                            <constraint firstItem="9CB-Im-PhM" firstAttribute="top" secondItem="C86-Yh-XUI" secondAttribute="top" id="YQw-VH-oB5"/>
+                            <constraint firstAttribute="centerY" secondItem="hmO-Uu-mDv" secondAttribute="centerY" constant="-8.5" id="bHS-ce-cpA"/>
+                            <constraint firstAttribute="centerX" secondItem="hmO-Uu-mDv" secondAttribute="centerX" constant="-8.5" id="gYL-Si-SuQ"/>
+                            <constraint firstItem="iDT-Wd-G4z" firstAttribute="top" secondItem="sfM-eu-bDc" secondAttribute="bottom" id="gmm-zp-fyX"/>
+                            <constraint firstItem="sfM-eu-bDc" firstAttribute="top" secondItem="9CB-Im-PhM" secondAttribute="bottom" id="grt-N3-axy"/>
+                            <constraint firstAttribute="trailing" secondItem="sfM-eu-bDc" secondAttribute="trailing" id="guF-9w-Shh"/>
+                            <constraint firstItem="sfM-eu-bDc" firstAttribute="top" secondItem="9CB-Im-PhM" secondAttribute="bottom" id="ozK-PX-cbT"/>
+                            <constraint firstItem="9CB-Im-PhM" firstAttribute="leading" secondItem="C86-Yh-XUI" secondAttribute="leading" id="rhu-u1-0Zi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GqF-TD-nb0"/>
