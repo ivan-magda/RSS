@@ -19,6 +19,8 @@
 {
     [super viewDidLoad];
     
+    self.navigationItem.title = [[[NSString alloc]init]stringByPaddingToLength:15 withString:self.title startingAtIndex:0];
+    
     [self loadRequestToWebView];
 }
 

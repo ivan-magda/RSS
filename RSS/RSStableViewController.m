@@ -110,14 +110,15 @@ static const int kActivityIndicatorTag = 101;
 
 #pragma mark - Navigation -
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     if ([segue.identifier isEqualToString:@"ShowDetail"]) {
         RSSDetailViewController *controller = segue.destinationViewController;
         controller.delegate = self;
         
         NSIndexPath *indexPath = sender;
         controller.link = _links[indexPath.row];
-        NSLog(@"%ld", (long)indexPath.row);
+        controller.title = _titles[indexPath.row];
     }
 }
 

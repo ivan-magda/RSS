@@ -27,6 +27,7 @@
 - (IBAction)showNextPressed:(UIBarButtonItem *)sender;
 
 @property (copy, nonatomic) NSString *link;
+@property (copy, nonatomic) NSString *title;
 @property (strong, nonatomic) id<RSSDetailViewControllerProtocol> delegate;
 
 @end
