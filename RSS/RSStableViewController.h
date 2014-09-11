@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RSSDetailViewController.h"
+
 @interface RSStableViewController : UITableViewController
+                                    <RSSDetailViewControllerProtocol>
 
 @end
